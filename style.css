@@ -1,0 +1,104 @@
+/* Blackwood Hospital Escape - shared stylesheet */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background-color: #111317;
+  color: #e8e9ed;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.story-card {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 28px;
+  background-color: #202329;
+  border: 1px solid #686c75;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+  margin: 0 0 18px;
+  color: #d9b8b8;
+  font-size: 2.25rem;
+  line-height: 1.15;
+}
+
+p { margin: 18px 0; }
+
+.eyebrow {
+  margin-bottom: 8px;
+  color: #aeb4c0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #777d88;
+  background: #090a0c;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+}
+
+.choice {
+  display: block;
+  padding: 15px;
+  background-color: #762f3b;
+  color: #fff5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #b66a76;
+  border-radius: 7px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.choice:hover, .choice:focus {
+  background-color: #984553;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+a { color: #efb6bf; text-decoration: underline; }
+
+.home-link {
+  padding-top: 12px;
+  border-top: 1px solid #4d515b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.credit {
+  color: #b8bdc7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.credit a { color: #efb6bf; }
+
+@media (max-width: 600px) {
+  body { padding: 16px 10px; font-size: 16px; }
+  .story-card { padding: 18px; }
+  h1 { font-size: 1.8rem; }
+  .choices { grid-template-columns: 1fr; }
+}
